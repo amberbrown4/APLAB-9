@@ -1,4 +1,5 @@
-public class Person {protected String firstName;
+public class Person {
+    protected String firstName;
     protected String lastName;
     protected String ID;
     protected int joiningYear;

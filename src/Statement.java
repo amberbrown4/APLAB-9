@@ -1,9 +1,9 @@
 public class Statement {
 
     private double amount;
-    private Employee receiver;
+    private AccountingInterface receiver;
 
-    public Statement(double amount, Employee receiver) {
+    public Statement(double amount, AccountingInterface receiver) {
         this.amount = amount;
         this.receiver = receiver;
     }
@@ -13,7 +13,7 @@ public class Statement {
     public void setAmount(double amount){
         this.amount = amount;
     }
-    public Employee getReceiver(){
+    public AccountingInterface getReceiver(){
         return receiver;
     }
     public void setReceiver(Employee receiver){

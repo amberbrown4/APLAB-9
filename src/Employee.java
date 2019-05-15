@@ -13,8 +13,12 @@ public abstract class Employee extends Person implements AccountingInterface {
         this.basicIncome = basicIncome;
     }
     public abstract double calCurrentIncome();
+    @Override
+    public Employee callEmployee() {
+        return this;
+    }
 
-    public abstract double isPromotable();
+    public abstract boolean isPromotable();
 
     public void addBankStatement(Statement statement){
         bankStatments.add(statement);

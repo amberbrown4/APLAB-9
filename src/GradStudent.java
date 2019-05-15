@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class GradStudent {
+public class GradStudent implements AccountingInterface {
     private ArrayList<Publication> publications;
     private Professor advisor;
 
@@ -11,4 +11,13 @@ public class GradStudent {
         publications.add(publication);
     }
 
+    @Override
+    public double calCurrentIncome() {
+        return 20000*publications.size();
+    }
+
+    @Override
+    public AccountingInterface callEmployee() {
+        return this;
+    }
 }

@@ -1,8 +1,8 @@
-public class Acount {
+public class Account {
     private AccountingInterface employee;
     private double currentIncome = 0;
 
-    public Acount(AccountingInterface employee) {
+    public Account(AccountingInterface employee) {
         this.employee = employee;
     }
 
